@@ -1,0 +1,41 @@
+{
+  "name": "javascript-core-concepts",
+  "version": "1.0.0",
+  "description": "A comprehensive collection of JavaScript concepts explained with examples and documentation. Covers basics, advanced topics, async programming, event loop, ES6+ features, DOM, memory management, and design patterns.",
+  "author": {
+    "name": "Harshit Kumar",
+    "url": "https://github.com/harshitclub"
+  },
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"No tests yet. Add examples under each concept folder.\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harshitclub/javascript-core-concepts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/harshitclub/javascript-core-concepts/issues"
+  },
+  "homepage": "https://github.com/harshitclub/javascript-core-concepts#readme",
+  "keywords": [
+    "javascript",
+    "js",
+    "ecmascript",
+    "es6",
+    "async",
+    "event-loop",
+    "closures",
+    "promises",
+    "async-await",
+    "functional-programming",
+    "dom",
+    "memory-management",
+    "design-patterns",
+    "frontend",
+    "backend"
+  ]
+}
