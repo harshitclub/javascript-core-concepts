@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Events Masterclass</title>
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background-color: #f4f4f4;
+        margin: 20px;
+        line-height: 1.6;
+      }
+      h1,
+      h2 {
+        color: #333;
+      }
+      section {
+        background: #fff;
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+      button {
+        padding: 8px 12px;
+        border: none;
+        border-radius: 4px;
+        background-color: #0078d4;
+        color: #fff;
+        cursor: pointer;
+        margin-right: 8px;
+      }
+      button:hover {
+        background-color: #005fa3;
+      }
+      .highlight {
+        background-color: yellow;
+      }
+      #mouseArea {
+        background: #ffecb3;
+        border: 2px dashed #ffa000;
+        height: 100px;
+        margin-top: 10px;
+      }
+      input,
+      textarea,
+      select {
+        padding: 6px;
+        width: 250px;
+        margin-top: 5px;
+        border-radius: 4px;
+        border: 1px solid #aaa;
+      }
+      #log {
+        margin-top: 15px;
+        background: #eee;
+        padding: 10px;
+        border-radius: 6px;
+        height: 200px;
+        overflow-y: auto;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🎯 JavaScript Events Masterclass</h1>
+
+    <section id="clickSection">
+      <h2>1. Basic Events (click, dblclick, mouseover, mouseout)</h2>
+      <button id="clickBtn">Click Me</button>
+      <button id="dblClickBtn">Double Click Me</button>
+      <div id="mouseArea">Hover over this box</div>
+    </section>
+
+    <section id="keyboardSection">
+      <h2>2. Keyboard Events (keydown, keyup, keypress)</h2>
+      <input type="text" id="keyboardInput" placeholder="Type here..." />
+      <p id="keyResult"></p>
+    </section>
+
+    <section id="formSection">
+      <h2>3. Form & Input Events (input, change, submit)</h2>
+      <form id="demoForm">
+        <input
+          type="text"
+          id="nameInput"
+          placeholder="Enter name"
+          required
+        /><br />
+        <select id="selectInput">
+          <option value="">--Select City--</option>
+          <option>Delhi</option>
+          <option>Mumbai</option>
+          <option>Bangalore</option></select
+        ><br />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section id="windowSection">
+      <h2>4. Window Events (scroll, resize, load)</h2>
+      <p>Scroll or resize the window to trigger these events.</p>
+    </section>
+
+    <section id="customEventSection">
+      <h2>5. Custom Events</h2>
+      <button id="customBtn">Trigger Custom Event</button>
+    </section>
+
+    <section>
+      <h2>Event Log:</h2>
+      <div id="log"></div>
+    </section>
+
+    <script src="events.js"></script>
+  </body>
+</html>
