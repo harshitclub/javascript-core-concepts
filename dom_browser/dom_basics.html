@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation Masterclass</title>
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background-color: #f4f4f4;
+        margin: 20px;
+        line-height: 1.5;
+      }
+      h1,
+      h2 {
+        color: #333;
+      }
+      button {
+        margin: 5px 0;
+        padding: 8px 12px;
+        background-color: #0078d4;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #005fa3;
+      }
+      .highlight {
+        background-color: yellow;
+        font-weight: bold;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: tomato;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🔥 Learn DOM Manipulation (Everything You Need)</h1>
+
+    <h2>1. Selecting Elements</h2>
+    <p id="p1">This is a paragraph with an ID.</p>
+    <p class="pClass">This is a paragraph with a class.</p>
+    <button id="selectBtn">Highlight Elements</button>
+
+    <h2>2. Creating and Inserting Elements</h2>
+    <button id="createBtn">Create Element</button>
+    <div id="container"></div>
+
+    <h2>3. Removing Elements</h2>
+    <button id="removeBtn">Remove Element</button>
+
+    <h2>4. Changing Styles and Classes</h2>
+    <button id="styleBtn">Change Styles</button>
+    <div class="box" id="colorBox"></div>
+
+    <h2>5. Working with Attributes</h2>
+    <img id="image" src="https://via.placeholder.com/100" alt="Placeholder" />
+    <button id="attrBtn">Change Image</button>
+
+    <h2>6. Event Handling</h2>
+    <button id="eventBtn">Click Me!</button>
+
+    <h2>7. Input & Form Manipulation</h2>
+    <input type="text" id="inputField" placeholder="Type something..." />
+    <button id="inputBtn">Get Input Value</button>
+    <p id="inputResult"></p>
+
+    <h2>8. Traversing the DOM</h2>
+    <ul id="list">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Cherry</li>
+    </ul>
+    <button id="traverseBtn">Traverse List</button>
+
+    <h2>9. innerHTML vs textContent</h2>
+    <p id="contentP">Hello <b>World!</b></p>
+    <button id="contentBtn">Show Difference</button>
+
+    <h2>10. Event Delegation</h2>
+    <ul id="delegationList">
+      <li>Click any item</li>
+      <li>They all use ONE event listener</li>
+      <li>Efficient way for dynamic content</li>
+    </ul>
+
+    <script src="dom_manipulation.js"></script>
+  </body>
+</html>
